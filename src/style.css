@@ -1,0 +1,97 @@
+:root {
+  --color-turquiose: #1abc9c;
+  --color-emerald: #2ecc71;
+  --color-peterRiver: #3498db;
+  --color-amethyst: #9b59b6;
+  --color-werAsphalt: #34495e;
+
+  --color-greenSea: #16a085;
+  --color-nephritis: #27ae60;
+  --color-belizeHole: #2980b9;
+  --color-wisteria: #8e44ad;
+  --color-midnightBlue: #2c3e50;
+
+  --color-sunFlower: #f1c40f;
+  --color-carrot: #e67e22;
+  --color-alizarin: #e74c3c;
+  --color-clouds: #ecf0f1;
+  --color-concret: #95a5a6;
+
+  --color-orage: #f39c12;
+  --color-pumpkin: #d35400;
+  --color-pomegranate: #c0392b;
+  --color-silver: #bdc3c7;
+  --color-asbestos: #7f8c8d;
+
+  --size-a: 1rem;
+  --size-b: 2rem;
+  --size-c: 3rem;
+  --size-d: 5rem;
+  --size-e: 8rem;
+  --size-f: 13rem;
+  --size-g: 21rem;
+  --size-h: 34rem;
+  --size-i: 55rem;
+}
+/* 1,1,2,3,5,8,13,21,34,55 */
+body {
+  background-color: var(--color-midnightBlue);
+  color: var(--color-clouds);
+  padding: var(--size-b);
+}
+h1 {
+  font-size: var(--size-b);
+}
+.wrapper {
+  box-shadow: 8px 8px 10px black;
+}
+.tools {
+  display: flex;
+  background-color: var(--color-concret);
+  border-radius: 5px 5px 0px 0px;
+  color: var(--color-clouds);
+}
+.btn {
+  font-size: 1.2rem;
+  padding: 10px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  margin: 5px;
+  line-height: 2;
+  display: flex;
+  align-items: center;
+  background-color: var(--color-clouds);
+  border-bottom: 2px solid var(--color-silver);
+  border-right: 2px solid var(--color-silver);
+}
+
+.btn:hover {
+  background-color: var(--color-turquiose);
+  color: var(--color-clouds);
+  border-bottom: 2px solid var(--color-greenSea);
+  border-right: 2px solid var(--color-greenSea);
+  transition: all 100ms ease-in-out;
+}
+.btn:disabled,
+button[disabled] {
+  cursor: not-allowed;
+  color: var(--color-silver);
+  background-color: var(--color-clouds);
+}
+.btn:disabled,
+button[disabled]:hover {
+  color: var(--color-silver);
+  background-color: var(--color-clouds);
+  border-bottom: 2px solid var(--color-silver);
+  border-right: 2px solid var(--color-silver);
+}
+.editor {
+  width: 100%;
+  background-color: var(--color-werAsphalt);
+  min-height: 50vh;
+  border-radius: 0px 0px 5px 5px;
+  padding: 10px;
+  border-bottom: 1px solid var(--color-asbestos);
+  border-right: 1px solid var(--color-asbestos);
+}

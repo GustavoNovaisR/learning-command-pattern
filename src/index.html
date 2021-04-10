@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="./reset.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <script type="module" src="main.js"></script>
+</head>
+
+<body>
+    <h1>Simple Editor</h1>
+    <div class="wrapper">
+        <div class="tools">
+            <button class="btn" id='undo'>
+                <span class="material-icons">undo</span>
+            </button>
+            <button class="btn" disabled>
+                <span class="material-icons">redo</span>
+            </button>
+            <button class="btn" id='copy'>
+                <span class="material-icons">content_copy</span>
+            </button>
+            <button class="btn" id='cut'>
+                <span class="material-icons">content_cut</span>
+            </button>
+            <button class="btn" id='paste'>
+                <span class="material-icons">content_paste</span>
+            </button>
+        </div>
+        <div class="editor" id='editor' contenteditable>
+            <h1 id='Gustavo'>Exemplo titulo! &lt;H1&gt;</h1>
+            <h2>Exemplo titulo! &lt;H2&gt;</h2>
+            <h3>Exemplo titulo! &lt;H3&gt;</h3>
+            <p>Sejam bem vindos ao meu editor!</p>
+        </div>
+    </div>
+</body>
+
+</html>
